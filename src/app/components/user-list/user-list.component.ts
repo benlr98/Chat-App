@@ -20,11 +20,12 @@ export class UserListComponent implements OnInit {
   selectUser1() {
     this.childUser = 1;
     this.user = 1;
-    console.log(this.childUser)
+    console.log(this.user)
   }
   selectUser2() {
     this.childUser = 2;
-    console.log(this.childUser)
+    this.user = 2;
+    console.log(this.user)
   }
 
 }

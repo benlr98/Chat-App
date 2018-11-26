@@ -11,11 +11,10 @@ export class ChatFormComponent implements OnInit {
 
   input = document.getElementById('msg');
 
-
   constructor() { }
 
   ngOnInit() {
-    console.log(UserListComponent);
+    //console.log(UserListComponent);
     
   }
 
