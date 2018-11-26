@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class UserListComponent implements OnInit {
 
   @Input() childUser: number;
+  user: number; 
 
   constructor() { }
 
@@ -18,6 +19,7 @@ export class UserListComponent implements OnInit {
 
   selectUser1() {
     this.childUser = 1;
+    this.user = 1;
     console.log(this.childUser)
   }
   selectUser2() {

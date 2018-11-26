@@ -10,18 +10,19 @@ import { UserListComponent } from '../user-list/user-list.component';
 export class ChatFormComponent implements OnInit {
 
   input = document.getElementById('msg');
-  user = 1;
+
 
   constructor() { }
 
   ngOnInit() {
+    console.log(UserListComponent);
     
   }
 
 
   addMessage() {
     const inputText = (<HTMLInputElement>document.getElementById('msg')).value;
-    MessageList.push({user: this.user, message: inputText});
+    MessageList.push({user: 1, message: inputText});
     (<HTMLInputElement>document.getElementById('msg')).value = '';
   }
 
