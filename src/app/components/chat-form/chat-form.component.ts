@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MessageList } from 'src/app/message-list';
-import { UserListComponent } from '../user-list/user-list.component';
 
 @Component({
   selector: 'app-chat-form',
@@ -10,18 +9,18 @@ import { UserListComponent } from '../user-list/user-list.component';
 export class ChatFormComponent implements OnInit {
 
   input = document.getElementById('msg');
+  user: number;
 
   constructor() { }
 
   ngOnInit() {
-    //console.log(UserListComponent);
     
   }
 
 
   addMessage() {
     const inputText = (<HTMLInputElement>document.getElementById('msg')).value;
-    MessageList.push({user: 1, message: inputText});
+    MessageList.push({user: this.user, message: inputText});
     (<HTMLInputElement>document.getElementById('msg')).value = '';
   }
 
@@ -31,4 +30,13 @@ export class ChatFormComponent implements OnInit {
     }
     console.log()
   }  
+
+  selectUser1() {
+    this.user = 1;
+    console.log(this.user)
+  }
+  selectUser2() {
+    this.user = 2;
+    console.log(this.user)
+  }
 }
