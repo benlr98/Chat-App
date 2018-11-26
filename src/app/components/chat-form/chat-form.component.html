@@ -1,0 +1,12 @@
+<div class="chatFormWrapper">
+  <input autofocus
+         id="msg"
+         (keydown)="handleSubmit($event)" 
+         type="text" 
+         value=""
+  />
+  <button class="btn btn-info" (click)="addMessage()">
+    Send
+  </button>
+
+</div>

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chatApp';
+  user = 0;
+
+
 }
