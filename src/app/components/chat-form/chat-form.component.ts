@@ -14,7 +14,7 @@ export class ChatFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    this.user = 1;
   }
 
 
