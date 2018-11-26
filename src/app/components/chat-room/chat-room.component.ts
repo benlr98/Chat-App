@@ -9,6 +9,7 @@ import { MessageList } from 'src/app/message-list';
 export class ChatRoomComponent implements OnInit {
   
   messages = MessageList;
+  user = 5;
 
   constructor() {
     
